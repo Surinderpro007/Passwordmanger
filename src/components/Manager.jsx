@@ -4,9 +4,9 @@ const Manager = () => {
    const ref= useRef()
     const handleEyePassword = () => {
       // alert("show pass")
-      console.log(ref.current)
-      ref.current.src = ref.current.src === "X" ? "Y" : "X"
-      console.log(ref.current.src)
+      // console.log(ref.current)
+      ref.current.innerHTML = ref.current.innerHTML === "X" ? "Y" : "X"
+      // console.log(ref.current)
 
 
     }
@@ -59,8 +59,8 @@ const Manager = () => {
         required
         />
         <span onClick={handleEyePassword}  className="absolute top-0 right-0 mt-2 mr-3 cursor-pointer">
-            <img ref={ref} src="../icons/eye.svg" alt="eye" />
-            {/* <p ref={ref}>X</p> */}
+            {/* <img ref={ref} src="../icons/eye.svg" alt="eye" /> */}
+            <p ref={ref}>X</p>
         </span>
         </div>
 
