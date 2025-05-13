@@ -1,1 +1,50 @@
 @import "tailwindcss";
+
+
+body {
+    background: linear-gradient(90deg, rgba(42, 123, 155, 0.51) 3%, rgba(87, 199, 133, 0.71) 50%, rgba(235, 225, 160, 0.69) 100%);
+    max-width: 95%;
+    width: 100%;
+    margin: auto;
+}
+
+
+@media(max-width:768px) {
+
+    nav,
+    form,
+    footer {
+        width: 95%;
+    }
+
+    .inp>div {
+        display: block;
+    }
+
+    .inp .inp2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    button.saveBtn {
+        justify-content: center;
+    }
+
+    td button {
+        padding: 0;
+        height: 30px;
+        width: 30px;
+        margin: 1px;
+    }
+
+    td button>img {
+        height: 17px;
+        width: 46px;
+    }
+
+    footer {
+        position: relative;
+        top: 4px;
+        margin-bottom: 10px;
+    }
+}
